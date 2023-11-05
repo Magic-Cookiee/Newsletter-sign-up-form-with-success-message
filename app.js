@@ -10,7 +10,7 @@ const successInput = document.querySelector('.success-input');
 let inputValue = ''
 
 function validateForm(){
-  if(inputEmail.value.indexOf("@") == -1) {
+  if(inputEmail.value.indexOf("@") == -1 || inputEmail.value.length < 5) {
     formInputId.classList.add('form-input-error');
     spanAfterElement.classList.add('form-span-on-error');
   } else {
